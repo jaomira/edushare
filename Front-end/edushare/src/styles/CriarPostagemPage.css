@@ -1,0 +1,50 @@
+/* CriarPostagemPage Styles */
+.criar-postagem-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-voltar {
+  background: #f0f0f0;
+  border: 1px solid var(--color-border);
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  color: var(--color-text-dark);
+}
+
+.btn-voltar:hover {
+  background: #e0e0e0;
+  border-color: #999;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: var(--color-text-dark);
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .criar-postagem-page {
+    padding: 1rem;
+  }
+
+  .page-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    order: -1;
+  }
+}

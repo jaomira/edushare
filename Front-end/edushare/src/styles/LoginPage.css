@@ -1,0 +1,137 @@
+/* LoginPage Styles */
+.login-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.login-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+
+
+.usuario-form-container {
+    margin-top: 30px;
+}
+
+.login-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-section h2 {
+  margin-top: 0;
+  color: var(--color-text-dark);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-weight: 600;
+}
+
+.no-users {
+  text-align: center;
+  color: #999;
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.usuarios-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.usuario-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.usuario-item:hover {
+  background: #f0f0f0;
+  border-color: #667eea;
+}
+
+.usuario-details {
+  flex: 1;
+}
+
+.usuario-details h3 {
+  margin: 0 0 0.3rem 0;
+  color: #333;
+  font-size: 1rem;
+}
+
+.usuario-details p {
+  margin: 0;
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.btn-select {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+.btn-select:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 900px) {
+  .login-container {
+    grid-template-columns: 1fr;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .usuario-item {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .usuario-details {
+    width: 100%;
+  }
+
+  .btn-select {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-page {
+    padding: 1rem;
+  }
+
+  .login-section {
+    padding: 1.5rem;
+  }
+}

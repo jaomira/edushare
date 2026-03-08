@@ -1,0 +1,142 @@
+/* PostagemCard Styles */
+.postagem-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid var(--color-border);
+}
+
+.postagem-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.postagem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.postagem-titulo {
+  margin: 0;
+  font-size: 1.3rem;
+  color: var(--color-text-dark);
+  flex: 1;
+}
+
+.postagem-tipo {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.postagem-tipo.venda {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.postagem-tipo.doação {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.postagem-descricao {
+  color: var(--color-text-light);
+  line-height: 1.6;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.postagem-info {
+  margin: 1rem 0;
+}
+
+.postagem-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-top: 0.8rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.meta-item strong {
+  color: var(--color-text-dark);
+}
+
+.postagem-dono {
+  background: #f5f5f5;
+  padding: 0.8rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+.postagem-dono p {
+  margin: 0.3rem 0;
+}
+
+.postagem-footer {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.btn-like,
+.btn-delete {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.btn-like {
+  background: #ffe0e0;
+  color: var(--color-danger);
+}
+
+.btn-like:hover {
+  background: #ffcccc;
+}
+
+.btn-delete {
+  background: #ffcccc;
+  color: var(--color-danger);
+}
+
+.btn-delete:hover {
+  background: #ff9999;
+}
+
+@media (max-width: 500px) {
+  .postagem-card {
+    padding: 1rem;
+  }
+
+  .postagem-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .postagem-footer {
+    flex-direction: column;
+  }
+}

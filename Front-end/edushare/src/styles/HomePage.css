@@ -1,0 +1,63 @@
+/* HomePage Styles */
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.home-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.home-hero h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  color: #333;
+}
+
+.home-hero p {
+  margin: 0;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.postagens-container {
+  margin-top: 2rem;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.postagens-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1rem;
+  }
+
+  .home-hero {
+    padding: 1.5rem;
+  }
+
+  .home-hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .postagens-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
